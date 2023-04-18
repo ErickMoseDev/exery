@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap");
+
+:root {
+  --background-color: #212121;
+  --primary-color: #5c514c;
+  --btn-color: #ffab7e;
+  --accent-color: #3b3b3b;
+  --heading-font: "Oswald", sans-serif;
+  --subtext-font: "Qwigley", cursive;
+  --text-font: "Satoshi", sans-serif;
+  --white-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--text-font);
+}
+
+body {
+  background-color: var(--background-color);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+li {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  width: 250px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  color: var(--white-color);
+}
+
+.search {
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.miscallenous {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.miscallenous .search-box i {
+  color: var(--white-color);
+}
